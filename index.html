@@ -203,6 +203,26 @@
     opacity: 1;
   }
 
+  /* ── SUCCESS STATE ── */
+  .optin-success {
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+  .optin-success-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    color: var(--neon-teal);
+    text-shadow: 0 0 15px var(--neon-teal), 0 0 40px rgba(0,245,212,0.4);
+  }
+  .optin-success-msg {
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-top: 0.6rem;
+    line-height: 1.6;
+  }
+
   .optin-label {
     font-family: 'VT323', monospace;
     font-size: 1rem;
@@ -535,7 +555,7 @@
     <span class="line-teal">You were built there.</span>
   </h1>
 
-  <p class="hero-subtitle">A weekly lounge for the people who still feel it. Films, albums, memories — and the stories that were always underneath them.</p>
+  <p class="hero-subtitle">A lounge for the people who still feel it. Films, albums, memories — and the stories that were always behind them.</p>
 
   <div class="neon-rule"></div>
 
@@ -629,12 +649,42 @@
 <script>
   function rnlSubscribe(e, form) {
     e.preventDefault();
-    var name  = encodeURIComponent(form.querySelector('input[type="text"]').value);
-    var email = encodeURIComponent(form.querySelector('input[type="email"]').value);
-    window.open(
-      'https://subscribe-forms.beehiiv.com/b2c3eaaf-a1f3-4ef5-bfb7-11b93d1c8175?first_name=' + name + '&email=' + email,
-      '_blank'
-    );
+    var btn   = form.querySelector('.optin-btn');
+    var name  = form.querySelector('input[type="text"]').value.trim();
+    var email = form.querySelector('input[type="email"]').value.trim();
+
+    btn.textContent = 'One moment…';
+    btn.disabled = true;
+
+    fetch('https://api.beehiiv.com/v2/publications/b2c3eaaf-a1f3-4ef5-bfb7-11b93d1c8175/subscriptions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer Mra55XltxTIEhWXewzNhRvvHjeQ6escfPuMbLDEA18n1i73V9kNi49JCCq1HB2mE'
+      },
+      body: JSON.stringify({
+        email: email,
+        first_name: name,
+        reactivate_existing: false,
+        send_welcome_email: true
+      })
+    })
+    .then(function(res) {
+      if (res.ok) {
+        var target = form.closest('.optin-section') || form.parentElement;
+        target.innerHTML =
+          '<div class="optin-success">' +
+            '<p class="optin-success-title">You\'re in.</p>' +
+            '<p class="optin-success-msg">The Neon Field Guide is on its way.<br>Check your inbox — the door\'s open.</p>' +
+          '</div>';
+      } else {
+        throw new Error('error');
+      }
+    })
+    .catch(function() {
+      btn.textContent = 'Something went wrong — try again';
+      btn.disabled = false;
+    });
   }
 </script>
 </body>
