@@ -656,17 +656,12 @@
     btn.textContent = 'One moment…';
     btn.disabled = true;
 
-    fetch('https://api.beehiiv.com/v2/publications/b2c3eaaf-a1f3-4ef5-bfb7-11b93d1c8175/subscriptions', {
+    fetch('https://shy-hall-1cbd.shaunmongeau.workers.dev/', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer Mra55XltxTIEhWXewzNhRvvHjeQ6escfPuMbLDEA18n1i73V9kNi49JCCq1HB2mE'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         email: email,
-        first_name: name,
-        reactivate_existing: false,
-        send_welcome_email: true
+        first_name: name
       })
     })
     .then(function(res) {
