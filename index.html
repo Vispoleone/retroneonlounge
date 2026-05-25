@@ -366,8 +366,16 @@
 
   .pillars {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 600px) {
+    .pillars {
+      grid-template-columns: 1fr;
+    }
   }
 
   .pillar {
@@ -664,8 +672,9 @@
         first_name: name
       })
     })
-    .then(function(res) {
-      if (res.ok) {
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      if (data.ok) {
         var target = form.closest('.optin-section') || form.parentElement;
         target.innerHTML =
           '<div class="optin-success">' +
