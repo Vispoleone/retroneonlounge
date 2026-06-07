@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — Retro Neon Lounge</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --neon-pink: #ff2d78;
+    --neon-teal: #00f5d4;
+    --neon-purple: #b24bff;
+    --dark-bg: #0a0a0f;
+    --panel-bg: #0f0f1a;
+    --text-primary: #f0eaff;
+    --text-muted: #a09ab8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 2px,
+      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  header {
+    text-align: center;
+    padding: 3rem 1.5rem 2rem;
+    border-bottom: 1px solid rgba(255,45,120,0.2);
+  }
+
+  header a {
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    color: var(--neon-teal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  header a:hover { text-shadow: 0 0 8px var(--neon-teal); }
+
+  header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    letter-spacing: 0.05em;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px var(--neon-pink), 0 0 40px rgba(255,45,120,0.4);
+  }
+
+  header .last-updated {
+    font-family: 'VT323', monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    color: rgba(160,154,184,0.5);
+    margin-top: 0.75rem;
+  }
+
+  main {
+    max-width: 780px;
+    margin: 3rem auto;
+    padding: 0 1.5rem 5rem;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-style: italic;
+    border-left: 2px solid var(--neon-pink);
+    padding-left: 1.25rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+
+  .section {
+    margin-bottom: 2.75rem;
+  }
+
+  .section-label {
+    font-family: 'VT323', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: var(--neon-teal);
+    margin-bottom: 0.4rem;
+  }
+
+  .section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+    color: var(--text-primary);
+    margin-bottom: 0.85rem;
+    line-height: 1;
+  }
+
+  .section p {
+    color: var(--text-muted);
+    margin-bottom: 0.85rem;
+  }
+
+  .section p:last-child { margin-bottom: 0; }
+
+  .section a {
+    color: var(--neon-teal);
+    text-decoration: none;
+  }
+
+  .section a:hover { text-shadow: 0 0 6px var(--neon-teal); }
+
+  .neon-rule {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--neon-pink), var(--neon-teal), transparent);
+    margin: 2.5rem 0;
+    box-shadow: 0 0 6px var(--neon-pink);
+  }
+
+  .closing {
+    font-style: italic;
+    color: rgba(160,154,184,0.6);
+    font-size: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,45,120,0.15);
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: rgba(160,154,184,0.4);
+    border-top: 1px solid rgba(255,45,120,0.15);
+  }
+
+  footer a { color: rgba(0,245,212,0.5); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">◀ BACK TO THE LOUNGE</a>
+  <h1>Terms of Use</h1>
+  <p class="last-updated">◈ LAST UPDATED: JUNE 2026 ◈</p>
+</header>
+
+<main>
+
+  <p class="intro">
+    The Retro Neon Lounge is a place, not a product. But like any place worth coming back to, it has a few house rules. They're reasonable. Read them once — they say what they mean.
+  </p>
+
+  <div class="section">
+    <p class="section-label">◈ 01 ◈</p>
+    <h2>Who We Are</h2>
+    <p>Retro Neon Lounge ("RNL," "we," "us") is a content brand and newsletter community operated at <a href="https://retroneonlounge.com">retroneonlounge.com</a>. We produce weekly editorial content — film, music, memory — built around the neon-era 1980s and the people who lived it.</p>
+    <p>By visiting this site, reading our newsletter, or signing up as a subscriber, you agree to these Terms of Use. If you don't agree, that's okay — but the lounge isn't the right room for you.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 02 ◈</p>
+    <h2>What We Offer</h2>
+    <p>RetroNeonLounge.com provides free editorial content and a weekly newsletter delivered via email. Signing up is free. We don't charge you anything to walk in. Paid membership options, if and when introduced, will have their own terms at the time of purchase.</p>
+    <p>We make no guarantees about how often content is published, how long the newsletter runs, or that any specific piece of content remains available indefinitely. The lights stay on at our discretion.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 03 ◈</p>
+    <h2>Our Content Is Ours</h2>
+    <p>Everything on this site — the writing, the design, the visual identity, the brand name, the tagline, and the images we've created or licensed — belongs to Retro Neon Lounge. All rights reserved.</p>
+    <p>You're welcome to share things you find here. Quote a line, link to a piece, forward a newsletter to someone who'd get it. That's the whole point. What you can't do: reproduce our content in bulk, pass it off as your own, use it commercially, or scrape this site for training data or any automated purpose without our written permission.</p>
+    <p>If you're unsure whether something is okay, ask. The answer is usually yes if you're doing it because you genuinely love the material.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 04 ◈</p>
+    <h2>Your Email Address</h2>
+    <p>When you subscribe, you give us your email address and first name. We use them to send you the newsletter. That's it. We don't sell your data, we don't rent it, and we don't run it through anything you didn't sign up for.</p>
+    <p>For the full picture on how we handle your information, read our <a href="privacy-policy.html">Privacy Policy</a>. It's written the same way this document is — plainly, and honestly.</p>
+    <p>You can unsubscribe from the newsletter at any time by clicking the unsubscribe link in the footer of any email we've sent you. We comply with Canada's Anti-Spam Legislation (CASL) and respect your right to stop hearing from us.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 05 ◈</p>
+    <h2>Links to Other Places</h2>
+    <p>We link to films, albums, articles, and other things worth your time. Those links leave the lounge — what happens on those other sites is their business, not ours. We're not responsible for the content, privacy practices, or reliability of third-party websites.</p>
+    <p>A link from us is a recommendation, not an endorsement of everything that site does or says.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 06 ◈</p>
+    <h2>No Warranties</h2>
+    <p>We write carefully and we fact-check. But we're editorial — not academic, not medical, not financial, not legal. Nothing on this site or in the newsletter constitutes professional advice of any kind.</p>
+    <p>This site is provided as-is. We don't guarantee it will always be available, error-free, or uninterrupted. We've had the sign on for a while and we intend to keep it that way — but we make no promises about uptime or permanence.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 07 ◈</p>
+    <h2>Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Retro Neon Lounge will not be liable for any indirect, incidental, or consequential damages arising from your use of this site or our newsletter — including but not limited to loss of data, loss of revenue, or damages of any other kind.</p>
+    <p>Our total liability to you for anything arising from these terms or your use of this site is limited to the amount you've paid us. If that's zero, our liability is zero.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 08 ◈</p>
+    <h2>Changes to These Terms</h2>
+    <p>We may update these Terms of Use from time to time. When we do, we'll update the date at the top of this page. Continuing to use the site or receive the newsletter after an update means you accept the revised terms.</p>
+    <p>We won't sneak anything past you. If something significant changes, we'll say so.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 09 ◈</p>
+    <h2>Governing Law</h2>
+    <p>These Terms are governed by the laws of Canada and the province of Quebec, including the Civil Code of Quebec, without regard to conflict of law principles. Any disputes will be resolved in the courts of Quebec, Canada.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 10 ◈</p>
+    <h2>Get in Touch</h2>
+    <p>Questions about these terms? Something you want to flag? You can reach us at <a href="mailto:hello@retroneonlounge.com">hello@retroneonlounge.com</a>. We read everything that comes in.</p>
+  </div>
+
+  <p class="closing">
+    These terms exist to protect both sides of the door. They're not here to complicate things — just to make sure the lounge stays a good room for everyone in it. <em>The sign is still on. Come back anytime.</em>
+  </p>
+
+</main>
+
+<footer>
+  <p>© RETRO NEON LOUNGE &nbsp;·&nbsp; <a href="index.html">HOME</a> &nbsp;·&nbsp; <a href="privacy-policy.html">PRIVACY</a></p>
+</footer>
+
+</body>
+</html>
