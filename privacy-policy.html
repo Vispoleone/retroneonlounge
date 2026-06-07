@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Retro Neon Lounge</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --neon-pink: #ff2d78;
+    --neon-teal: #00f5d4;
+    --dark-bg: #0a0a0f;
+    --panel-bg: #0f0f1a;
+    --text-primary: #f0eaff;
+    --text-muted: #a09ab8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 2px,
+      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  header {
+    text-align: center;
+    padding: 3rem 1.5rem 2rem;
+    border-bottom: 1px solid rgba(255,45,120,0.2);
+  }
+
+  header a {
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    color: var(--neon-teal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  header a:hover { text-shadow: 0 0 8px var(--neon-teal); }
+
+  header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    letter-spacing: 0.05em;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px var(--neon-pink), 0 0 40px rgba(255,45,120,0.4);
+  }
+
+  main {
+    max-width: 820px;
+    margin: 3rem auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  /* FTC doc script styles override to match brand */
+  main h1, main h2, main h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.04em;
+    color: var(--neon-teal);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  main p, main li { color: var(--text-muted); margin-bottom: 1rem; }
+  main a { color: var(--neon-teal); }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: rgba(160,154,184,0.4);
+    border-top: 1px solid rgba(255,45,120,0.15);
+  }
+
+  footer a { color: rgba(0,245,212,0.5); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">◀ BACK TO THE LOUNGE</a>
+  <h1>Privacy Policy</h1>
+</header>
+
+<main>
+  <div id="ftc_doc_22828"></div>
+  <script type="text/javascript" src="https://d3r9z8mqrxc6wq.cloudfront.net/102695/doc-22828.js"></script>
+</main>
+
+<footer>
+  <p>© RETRO NEON LOUNGE &nbsp;·&nbsp; <a href="index.html">HOME</a></p>
+</footer>
+
+</body>
+</html>
