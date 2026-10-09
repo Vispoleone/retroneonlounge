@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conditions d’utilisation — Retro Neon Lounge</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --neon-pink: #ff2d78;
+    --neon-teal: #00f5d4;
+    --neon-purple: #b24bff;
+    --dark-bg: #0a0a0f;
+    --panel-bg: #0f0f1a;
+    --text-primary: #f0eaff;
+    --text-muted: #a09ab8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--dark-bg);
+    color: var(--text-primary);
+    font-family: 'Crimson Pro', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  /* Scanline overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 2px,
+      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  header {
+    text-align: center;
+    padding: 3rem 1.5rem 2rem;
+    border-bottom: 1px solid rgba(255,45,120,0.2);
+  }
+
+  header a {
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    color: var(--neon-teal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  header a:hover { text-shadow: 0 0 8px var(--neon-teal); }
+
+  header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    letter-spacing: 0.05em;
+    color: var(--neon-pink);
+    text-shadow: 0 0 15px var(--neon-pink), 0 0 40px rgba(255,45,120,0.4);
+  }
+
+  header .last-updated {
+    font-family: 'VT323', monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    color: rgba(160,154,184,0.5);
+    margin-top: 0.75rem;
+  }
+
+  main {
+    max-width: 780px;
+    margin: 3rem auto;
+    padding: 0 1.5rem 5rem;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    font-style: italic;
+    border-left: 2px solid var(--neon-pink);
+    padding-left: 1.25rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+
+  .section {
+    margin-bottom: 2.75rem;
+  }
+
+  .section-label {
+    font-family: 'VT323', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: var(--neon-teal);
+    margin-bottom: 0.4rem;
+  }
+
+  .section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.04em;
+    color: var(--text-primary);
+    margin-bottom: 0.85rem;
+    line-height: 1;
+  }
+
+  .section p {
+    color: var(--text-muted);
+    margin-bottom: 0.85rem;
+  }
+
+  .section p:last-child { margin-bottom: 0; }
+
+  .section a {
+    color: var(--neon-teal);
+    text-decoration: none;
+  }
+
+  .section a:hover { text-shadow: 0 0 6px var(--neon-teal); }
+
+  .neon-rule {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--neon-pink), var(--neon-teal), transparent);
+    margin: 2.5rem 0;
+    box-shadow: 0 0 6px var(--neon-pink);
+  }
+
+  .closing {
+    font-style: italic;
+    color: rgba(160,154,184,0.6);
+    font-size: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,45,120,0.15);
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    color: rgba(160,154,184,0.4);
+    border-top: 1px solid rgba(255,45,120,0.15);
+  }
+
+  footer a { color: rgba(0,245,212,0.5); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header style="position:relative;">
+  <a href="index-fr.html">◀ RETOUR AU LOUNGE</a>
+  <div style="position:absolute;top:1.25rem;right:1.5rem;font-family:'VT323',monospace;font-size:1rem;letter-spacing:0.15em;">
+    <a href="terms-of-use.html" style="color:rgba(160,154,184,0.5);text-decoration:none;display:inline;margin:0;">EN</a>
+    <span style="color:rgba(160,154,184,0.3);margin:0 0.3rem;">|</span>
+    <span style="color:var(--neon-teal);text-shadow:0 0 8px var(--neon-teal);">FR</span>
+  </div>
+  <h1>Conditions d’utilisation</h1>
+  <p class="last-updated">◈ DERNIÈRE MISE À JOUR : JUIN 2026 ◈</p>
+</header>
+
+<main>
+
+  <p class="intro">
+    Le Retro Neon Lounge est un lieu, pas un produit. Et comme tout endroit où l’on a envie de revenir, il a quelques règles de maison. Elles sont raisonnables. Lisez-les une fois : elles disent simplement ce qu’elles veulent dire.
+  </p>
+
+  <div class="section">
+    <p class="section-label">◈ 01 ◈</p>
+    <h2>Qui sommes-nous ?</h2>
+    <p>Retro Neon Lounge (« RNL », « nous ») est une marque de contenu et une communauté réunie autour d’une infolettre, accessible à l’adresse <a href="https://retroneonlounge.com">retroneonlounge.com</a>. Nous publions chaque semaine du contenu éditorial — cinéma, musique et souvenirs — autour des années 1980, à l’époque du néon, et des personnes qui les ont vécues.</p>
+    <p>En visitant ce site, en lisant notre infolettre ou en vous abonnant, vous acceptez les présentes conditions d’utilisation. Si vous n’êtes pas d’accord, aucun problème — mais le lounge n’est peut-être pas l’endroit qu’il vous faut.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 02 ◈</p>
+    <h2>Ce que nous proposons</h2>
+    <p>RetroNeonLounge.com propose gratuitement du contenu éditorial et une infolettre hebdomadaire envoyée par courriel. L’inscription est gratuite : l’entrée ne vous coûte rien. Si des formules d’adhésion payantes sont proposées à l’avenir, leurs conditions seront présentées au moment de l’achat.</p>
+    <p>Nous ne garantissons ni la fréquence de publication du contenu, ni la durée de l’infolettre, ni la disponibilité permanente d’un contenu particulier. C’est nous qui décidons combien de temps les lumières restent allumées.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 03 ◈</p>
+    <h2>Notre contenu nous appartient</h2>
+    <p>Tout ce qui se trouve sur ce site — textes, design, identité visuelle, nom de marque, slogan et images que nous avons créées ou utilisées sous licence — appartient à Retro Neon Lounge. Tous droits réservés.</p>
+    <p>Vous pouvez partager ce que vous trouvez ici : citer quelques lignes, créer un lien vers un article ou transférer l’infolettre à quelqu’un qui l’appréciera. C’est tout l’intérêt. En revanche, vous ne pouvez pas reproduire notre contenu en grande quantité, le présenter comme le vôtre, l’utiliser à des fins commerciales ou extraire le contenu du site pour entraîner des modèles ou à toute autre fin automatisée sans notre autorisation écrite.</p>
+    <p>En cas de doute, posez-nous la question. Si votre démarche vient d’un véritable amour du contenu, la réponse sera généralement oui.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 04 ◈</p>
+    <h2>Votre adresse courriel</h2>
+    <p>Lorsque vous vous abonnez, vous nous fournissez votre adresse courriel et votre prénom. Nous les utilisons pour vous envoyer l’infolettre. C’est tout. Nous ne vendons ni ne louons vos données et nous ne les utilisons pas à des fins auxquelles vous n’avez pas consenti.</p>
+    <p>Pour en savoir plus sur la façon dont nous traitons vos renseignements, consultez notre <a href="privacy-policy-fr.html">Politique de confidentialité</a>. Elle est rédigée comme ce document : clairement et honnêtement.</p>
+    <p>Vous pouvez vous désabonner de l’infolettre à tout moment en cliquant sur le lien de désabonnement au bas de l’un de nos courriels. Nous respectons la Loi canadienne anti-pourriel (LCAP) et votre droit de ne plus recevoir nos messages.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 05 ◈</p>
+    <h2>Liens vers d’autres sites</h2>
+    <p>Nous proposons des liens vers des films, des albums, des articles et d’autres découvertes qui valent le détour. Ces liens vous font sortir du lounge : ce qui se passe sur ces sites relève de leurs responsables, pas de nous. Nous ne sommes pas responsables du contenu, des pratiques de confidentialité ni de la fiabilité des sites tiers.</p>
+    <p>Un lien de notre part est une recommandation, et non une approbation de tout ce que le site concerné fait ou affirme.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 06 ◈</p>
+    <h2>Aucune garantie</h2>
+    <p>Nous écrivons avec soin et vérifions les faits. Mais notre contenu est éditorial : il ne constitue pas un avis universitaire, médical, financier ou juridique. Rien sur ce site ou dans l’infolettre ne constitue un conseil professionnel.</p>
+    <p>Ce site est fourni « tel quel ». Nous ne garantissons pas qu’il sera toujours accessible, exempt d’erreurs ou disponible sans interruption. L’enseigne est allumée et nous comptons la laisser ainsi, mais nous ne promettons ni disponibilité permanente ni pérennité.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 07 ◈</p>
+    <h2>Limitation de responsabilité</h2>
+    <p>Dans toute la mesure permise par la loi, Retro Neon Lounge ne pourra être tenue responsable des dommages indirects, accessoires ou consécutifs découlant de l’utilisation de ce site ou de notre infolettre, notamment la perte de données, de revenus ou tout autre dommage.</p>
+    <p>Notre responsabilité totale envers vous pour toute question découlant des présentes conditions ou de votre utilisation du site est limitée au montant que vous nous avez payé. Si ce montant est nul, notre responsabilité est nulle.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 08 ◈</p>
+    <h2>Modifications des présentes conditions</h2>
+    <p>Nous pouvons modifier ces conditions d’utilisation de temps à autre. Le cas échéant, nous mettrons à jour la date indiquée en haut de cette page. Si vous continuez à utiliser le site ou à recevoir l’infolettre après une modification, vous acceptez les conditions révisées.</p>
+    <p>Nous ne changerons rien en douce. Si une modification importante survient, nous vous le signalerons.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 09 ◈</p>
+    <h2>Droit applicable</h2>
+    <p>Les présentes conditions sont régies par les lois du Canada et de la province de Québec, notamment le Code civil du Québec, sans égard aux règles de conflit de lois. Tout différend sera soumis aux tribunaux du Québec, au Canada.</p>
+  </div>
+
+  <div class="neon-rule"></div>
+
+  <div class="section">
+    <p class="section-label">◈ 10 ◈</p>
+    <h2>Nous contacter</h2>
+    <p>Des questions sur ces conditions ? Quelque chose à signaler ? Écrivez-nous à <a href="mailto:hello@retroneonlounge.com">hello@retroneonlounge.com</a>. Nous lisons tous les messages reçus.</p>
+  </div>
+
+  <p class="closing">
+    Ces conditions protègent les deux côtés de la porte. Elles ne sont pas là pour compliquer les choses, mais pour que le lounge reste un endroit agréable pour tout le monde. <em>L’enseigne est toujours allumée. Revenez quand vous voulez.</em>
+  </p>
+
+</main>
+
+<footer>
+  <p>© RETRO NEON LOUNGE &nbsp;·&nbsp; QUEBEC, CANADA &nbsp;·&nbsp; <a href="mailto:hello@retroneonlounge.com">hello@retroneonlounge.com</a></p>
+  <p style="margin-top:0.5rem;"><a href="index-fr.html">ACCUEIL</a> &nbsp;·&nbsp; <a href="privacy-policy-fr.html">CONFIDENTIALITÉ</a></p>
+</footer>
+
+</body>
+</html>
