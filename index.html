@@ -320,6 +320,13 @@
 
   .rewind-strip h2 span { color: var(--neon-teal); text-shadow: 0 0 12px var(--neon-teal); }
 
+  .rewind-strip p.subtitle {
+    font-style: normal;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
   .rewind-strip p {
     max-width: 560px;
     margin: 0 auto;
@@ -601,8 +608,9 @@
 <!-- NEON FIELD GUIDE STRIP -->
 <div class="rewind-strip">
   <p class="eyebrow">◈ YOUR ENTRY GIFT ◈</p>
-  <h2>The <span>Neon Field Guide</span></h2>
-  <p>Sign up and we'll send you <em>The Neon Field Guide</em> — eight places you've already been. The arcade. The diner at 11pm on a Wednesday. The corner bar with the sign you could see from the street. The motel marquee half a mile before the exit on a dark interstate. We're going back. This time, we're taking our time.</p>
+  <h2>The <span>Neon Decade</span></h2>
+  <p class="subtitle">Your Field Guide to the 8 places you already know</p>
+  <p>Sign up and we'll send you <em>The Neon Decade</em>. The arcade. The diner at 11pm on a Wednesday. The corner bar with the sign you could see from the street. The motel marquee half a mile before the exit on a dark interstate. We're going back. This time, we're taking our time.</p>
 </div>
 
 <!-- WHAT YOU GET -->
@@ -693,7 +701,7 @@
         target.innerHTML =
           '<div class="optin-success">' +
             '<p class="optin-success-title">You\'re in.</p>' +
-            '<p class="optin-success-msg">The Neon Field Guide is on its way.<br>Check your inbox — the door\'s open.</p>' +
+            '<p class="optin-success-msg">The Neon Decade is on its way.<br>Check your inbox — the door\'s open.</p>' +
           '</div>';
       } else {
         throw new Error('error');

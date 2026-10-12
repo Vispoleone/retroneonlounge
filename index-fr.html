@@ -321,6 +321,13 @@
 
   .rewind-strip h2 span { color: var(--neon-teal); text-shadow: 0 0 12px var(--neon-teal); }
 
+  .rewind-strip p.subtitle {
+    font-style: normal;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
   .rewind-strip p {
     max-width: 560px;
     margin: 0 auto;
@@ -589,9 +596,10 @@
 </section>
 <!-- NEON FIELD GUIDE STRIP -->
 <div class="rewind-strip">
-<p class="eyebrow">Inscrivez-vous et recevez le Guide des lieux néon : huit endroits que vous connaissez déjà. L’arcade. Le diner à 23 h un mercredi. Le bar du coin dont l’enseigne se voyait depuis la rue. Le panneau lumineux du motel, à moins d’un kilomètre de la sortie sur une autoroute plongée dans la nuit. On y retourne. Cette fois, on prend notre temps.</p>
-<h2>Le guide des lieux néon</h2>
-<p>Inscrivez-vous et recevez le Guide des lieux néon : huit endroits que vous connaissez déjà. L’arcade. Le diner à 23 h un mercredi. Le bar du coin dont l’enseigne se voyait depuis la rue. Le panneau lumineux du motel, à moins d’un kilomètre de la sortie sur une autoroute plongée dans la nuit. On y retourne. Cette fois, on prend notre temps.</p>
+<p class="eyebrow">◈ VOTRE CADEAU DE BIENVENUE ◈</p>
+<h2>The <span>Neon Decade</span></h2>
+<p class="subtitle">Votre guide des 8 lieux que vous connaissez déjà</p>
+<p>Inscrivez-vous et recevez <em>The Neon Decade</em>. L’arcade. Le diner à 23 h un mercredi. Le bar du coin dont l’enseigne se voyait depuis la rue. Le panneau lumineux du motel, à moins d’un kilomètre de la sortie sur une autoroute plongée dans la nuit. On y retourne. Cette fois, on prend notre temps.</p>
 </div>
 <!-- WHAT YOU GET -->
 <section class="what-section">
@@ -673,7 +681,7 @@
         target.innerHTML =
           '<div class="optin-success">' +
             '<p class="optin-success-title">You\'re in.</p>' +
-            '<p class="optin-success-msg">Le Guide des lieux néon est en route.<br>Check your inbox — the door\'s open.</p>' +
+            '<p class="optin-success-msg">The Neon Decade est en route.<br>Vérifiez votre boîte de réception — la porte est ouverte.</p>' +
           '</div>';
       } else {
         throw new Error('error');
