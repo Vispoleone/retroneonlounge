@@ -6,187 +6,120 @@
 <title>Politique de confidentialité — Retro Neon Lounge</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --neon-pink: #ff2d78;
-    --neon-teal: #00f5d4;
-    --dark-bg: #0a0a0f;
-    --panel-bg: #0f0f1a;
-    --text-primary: #f0eaff;
-    --text-muted: #a09ab8;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background-color: var(--dark-bg);
-    color: var(--text-primary);
-    font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 18px;
-    line-height: 1.7;
-  }
-
-  /* Scanline overlay */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background: repeating-linear-gradient(
-      0deg, transparent, transparent 2px,
-      rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px
-    );
-    pointer-events: none;
-    z-index: 1000;
-  }
-
-  header {
-    text-align: center;
-    padding: 3rem 1.5rem 2rem;
-    border-bottom: 1px solid rgba(255,45,120,0.2);
-  }
-
-  header a {
-    font-family: 'VT323', monospace;
-    font-size: 1rem;
-    letter-spacing: 0.3em;
-    color: var(--neon-teal);
-    text-decoration: none;
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  header a:hover { text-shadow: 0 0 8px var(--neon-teal); }
-
-  header h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
-    letter-spacing: 0.05em;
-    color: var(--neon-pink);
-    text-shadow: 0 0 15px var(--neon-pink), 0 0 40px rgba(255,45,120,0.4);
-  }
-
-  main {
-    max-width: 820px;
-    margin: 3rem auto;
-    padding: 0 1.5rem 4rem;
-  }
-
-  /* FTC doc script styles override to match brand */
-  main h1, main h2, main h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 0.04em;
-    color: var(--neon-teal);
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  main p, main li { color: var(--text-muted); margin-bottom: 1rem; }
-  main a { color: var(--neon-teal); }
-
-  footer {
-    text-align: center;
-    padding: 2rem 1.5rem;
-    font-family: 'VT323', monospace;
-    font-size: 1rem;
-    letter-spacing: 0.2em;
-    color: rgba(160,154,184,0.4);
-    border-top: 1px solid rgba(255,45,120,0.15);
-  }
-
-  footer a { color: rgba(0,245,212,0.5); text-decoration: none; }
+:root{--neon-pink:#ff2d78;--neon-teal:#00f5d4;--dark-bg:#0a0a0f;--panel-bg:#0f0f1a;--text-primary:#f0eaff;--text-muted:#a09ab8}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background-color:var(--dark-bg);color:var(--text-primary);font-family:'Crimson Pro',Georgia,serif;font-size:18px;line-height:1.7}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,.08) 2px,rgba(0,0,0,.08) 4px);pointer-events:none;z-index:1000}
+header{text-align:center;padding:3rem 1.5rem 2rem;border-bottom:1px solid rgba(255,45,120,.2)}
+header a{font-family:'VT323',monospace;font-size:1rem;letter-spacing:.3em;color:var(--neon-teal);text-decoration:none;display:block;margin-bottom:1rem}
+header a:hover{text-shadow:0 0 8px var(--neon-teal)}
+header h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);letter-spacing:.05em;color:var(--neon-pink);text-shadow:0 0 15px var(--neon-pink),0 0 40px rgba(255,45,120,.4)}
+main{max-width:820px;margin:3rem auto;padding:0 1.5rem 4rem}
+main h2,main h3{font-family:'Bebas Neue',sans-serif;letter-spacing:.04em;color:var(--neon-teal);margin-top:2rem;margin-bottom:.5rem}
+main p,main li{color:var(--text-muted);margin-bottom:1rem} main ul{padding-left:1.5rem} main a{color:var(--neon-teal);overflow-wrap:anywhere} main hr{border:0;border-top:1px solid rgba(255,45,120,.25);margin:2rem 0}
+footer{text-align:center;padding:2rem 1.5rem;font-family:'VT323',monospace;font-size:1rem;letter-spacing:.2em;color:rgba(160,154,184,.4);border-top:1px solid rgba(255,45,120,.15)} footer a{color:rgba(0,245,212,.5);text-decoration:none}
 </style>
 </head>
 <body>
-
 <header style="position:relative;">
-  <a href="index-fr.html">◀ RETOUR AU LOUNGE</a>
-  <div style="position:absolute;top:1.25rem;right:1.5rem;font-family:'VT323',monospace;font-size:1rem;letter-spacing:0.15em;">
-    <a href="privacy-policy.html" style="color:rgba(160,154,184,0.5);text-decoration:none;display:inline;margin:0;">EN</a>
-    <span style="color:rgba(160,154,184,0.3);margin:0 0.3rem;">|</span>
-    <span style="color:var(--neon-teal);text-shadow:0 0 8px var(--neon-teal);">FR</span>
-  </div>
-  <h1>Politique de confidentialité</h1>
+<a href="index-fr.html">◀ RETOUR AU LOUNGE</a>
+<div style="position:absolute;top:1.25rem;right:1.5rem;font-family:'VT323',monospace;font-size:1rem;letter-spacing:.15em;"><a href="privacy-policy.html" style="color:rgba(160,154,184,.5);text-decoration:none;display:inline;margin:0;">EN</a><span style="color:rgba(160,154,184,.3);margin:0 .3rem;">|</span><span style="color:var(--neon-teal);text-shadow:0 0 8px var(--neon-teal);">FR</span></div>
+<h1>Politique de confidentialité</h1>
 </header>
-
 <main>
-  <p><strong>Date d’entrée en vigueur : 1er juin 2026</strong></p>
-  <p>Pour consulter les modifications importantes et leurs dates d’entrée en vigueur, faites défiler jusqu’au bas de cette page.</p>
-  <p>Retro Neon Lounge (« RNL ») possède et exploite le site retroneonlounge.com. Toute référence à « nous », à « notre », au « site Web » ou au « présent site » désigne RNL.</p>
+<p><strong>Avis de mise à jour — Date d’entrée en vigueur : 1er octobre 2026.</strong> La présente politique a été mise à jour afin de préciser les renseignements déjà communiqués au sujet des publicités personnalisées selon vos centres d’intérêt.</p>
+<p>Pour consulter les autres modifications importantes et leurs dates d’entrée en vigueur, veuillez faire défiler jusqu’au bas de la page.</p>
+<p>Retro Neon Lounge (« RNL ») possède et exploite le site retroneonlounge.com. Toute référence à « nous », « notre », « nos », au « site Web » ou au « présent site » désigne RNL.</p>
+<p>La présente Politique de confidentialité décrit la façon dont nous recueillons, utilisons et partageons les renseignements, notamment avec nos partenaires marketing pour diffuser des publicités personnalisées selon vos centres d’intérêt. Ces partenaires peuvent comprendre des fournisseurs de services tiers, des annonceurs, des réseaux et plateformes publicitaires, des agences de publicité ainsi que des courtiers et agrégateurs de données.</p>
+<p>Cette politique s’applique aux services que nous et nos entités affiliées proposons, y compris ceux consultés à partir d’appareils mobiles ou d’interfaces de programmation d’applications (API), sauf les services régis par une politique distincte qui n’intègre pas la présente politique. Elle ne couvre pas les pratiques des autres entreprises ou organisations qui font la publicité de nos services et peuvent utiliser des témoins, des balises Web (pixels) ou d’autres méthodes pour diffuser des publicités personnalisées.</p>
 
-  <h2>COMMENT NOUS MODIFIONS LA PRÉSENTE POLITIQUE DE CONFIDENTIALITÉ</h2>
-  <p>Nous nous réservons le droit de modifier la présente Politique de confidentialité à tout moment et sans préavis, en publiant une version modifiée qui sera toujours accessible en cliquant sur le lien « Politique de confidentialité » de la page d’accueil du site. En continuant d’utiliser le site, vous indiquez accepter la Politique de confidentialité modifiée.</p>
-  <p>En ce qui concerne les renseignements personnels (définis ci-dessous), si une modification réduit de façon importante les restrictions applicables à notre utilisation ou à notre divulgation des renseignements personnels que vous nous avez déjà communiqués, nous obtiendrons votre consentement avant d’appliquer ces modifications à ces renseignements.</p>
+<h2>COMMENT NOUS MODIFIONS LA PRÉSENTE POLITIQUE</h2>
+<p>Nous pouvons modifier cette politique à tout moment et sans préavis en publiant une version révisée, accessible au moyen du lien « Politique de confidentialité » sur la page d’accueil. Si vous continuez à utiliser le site, cela signifie que vous acceptez la politique modifiée.</p>
+<p>Si une modification assouplit de façon importante les restrictions applicables à notre utilisation ou à notre divulgation des renseignements personnels que vous nous avez déjà communiqués, nous obtiendrons votre consentement avant d’appliquer cette modification à ces renseignements.</p>
 
-  <h2>LES TYPES DE RENSEIGNEMENTS QUE NOUS RECUEILLONS</h2>
-  <p><strong>Renseignements personnels.</strong> Les « renseignements personnels » comprennent tout renseignement concernant une personne physique qui peut servir directement à l’identifier. Les renseignements personnels que nous recueillons peuvent varier selon la finalité pour laquelle vous les fournissez et peuvent comprendre une ou plusieurs des catégories suivantes : nom et adresse courriel.</p>
-  <p><strong>Données d’utilisation.</strong> Nous nous réservons le droit de recueillir des renseignements liés à votre utilisation du site, automatiquement à partir de celui-ci (ou des services tiers qui y sont utilisés). Ces renseignements peuvent notamment comprendre les adresses IP ou noms de domaine des ordinateurs utilisés pour accéder au site, le pays d’origine, les caractéristiques du navigateur et du système d’exploitation, les données temporelles de chaque visite (par exemple, le temps passé sur chaque page), le parcours suivi sur le site, notamment l’ordre des pages consultées, ainsi que des données et statistiques de marketing et de conversion, des rapports, des données d’analyse, des avis et des sondages (« données d’utilisation »). Les données d’utilisation sont essentiellement anonymes lorsqu’elles sont recueillies; elles pourraient toutefois servir indirectement à identifier une personne.</p>
+<h2>LES TYPES DE RENSEIGNEMENTS QUE NOUS RECUEILLONS</h2>
+<p><strong>Renseignements personnels.</strong> Les « renseignements personnels » sont des renseignements concernant une personne physique qui peuvent servir directement à l’identifier. Selon la raison pour laquelle vous les fournissez, ils peuvent comprendre votre nom, votre adresse postale, votre adresse courriel, votre numéro de téléphone, les renseignements relatifs à une carte de crédit (numéro, date d’expiration et adresse de facturation) et des données de localisation.</p>
+<p>Nous pouvons aussi recueillir des renseignements accessibles au public que vous publiez sur des plateformes ou profils de médias sociaux. Lorsque vous interagissez avec notre contenu sur ces plateformes, vous pouvez nous autoriser à accéder à certains renseignements de votre profil : nom, adresse courriel, photo, genre, date de naissance, emplacement, identifiant de compte, photos et vidéos aimées, liste d’amis ou de relations, abonnements et abonnés, publications et mentions « J’aime ».</p>
+<p><strong>Données d’utilisation.</strong> Nous, nos entités affiliées et nos partenaires marketing pouvons recueillir automatiquement des renseignements sur votre utilisation du site et sur l’ordinateur ou l’appareil utilisé pour y accéder. Cela peut comprendre l’adresse IP, le navigateur et le système d’exploitation, le fournisseur d’accès Internet, le réseau mobile, les identifiants de l’appareil (par exemple, IDFA d’Apple ou identifiant publicitaire Android), les paramètres de l’appareil et du navigateur, les pages consultées, les pages visitées avant et après, le type d’appareil mobile, les données de localisation, le contenu et les publicités consultés ou sur lesquels vous avez cliqué, la durée des visites et le parcours suivi sur le site. Ces données peuvent aussi inclure les statistiques de marketing et de conversion, les rapports, les analyses, les interactions avec nos courriels, ainsi que les avis et sondages. Elles sont généralement anonymes au moment de leur collecte, mais peuvent indirectement permettre d’identifier une personne.</p>
+<p><strong>Données de géolocalisation.</strong> Lorsque vous consultez une page ou un service à partir d’un ordinateur ou d’un appareil mobile, il peut vous être demandé de partager votre géolocalisation précise (GPS) pour personnaliser votre expérience sur nos services ou ceux d’un partenaire marketing. Vous pouvez généralement désactiver la collecte de localisation dans les paramètres de confidentialité de votre appareil.</p>
+<p><strong>Données provenant de médias sociaux et d’autres sources tierces.</strong> Lorsque nous interagissons avec vous par l’intermédiaire de plateformes sociales, de sites Web, d’applications, d’intégrations ou de services de partenaires marketing, nous pouvons recevoir des renseignements sur vos interactions : contenu consulté, résultats dans un jeu, meilleurs scores et renseignements sur les publicités qui vous ont été présentées ou sur lesquelles vous avez cliqué. Consultez les politiques de confidentialité et conditions d’utilisation des plateformes concernées pour connaître leurs pratiques et gérer vos paramètres.</p>
 
-  <h2>COMMENT ET QUAND NOUS RECUEILLONS LES RENSEIGNEMENTS</h2>
-  <p><strong>Renseignements personnels.</strong> Nous recueillons des renseignements personnels lorsque vous nous les fournissez au moyen de formulaires d’inscription ou dans le cadre de l’ouverture d’un compte, de l’inscription à un produit ou à un service, ou de la participation à une promotion offerte sur ce site. Les renseignements personnels demandés peuvent varier selon le formulaire d’inscription ou d’enregistrement.</p>
-  <p><strong>Vos communications avec nous.</strong> Nous recueillons les renseignements personnels que nous recevons lorsque vous communiquez avec nous, par exemple au moyen de nos services de courriel et/ou de réponse automatique.</p>
-  <p><strong>Données d’utilisation.</strong> Nous nous réservons le droit de surveiller votre utilisation du site. Lorsque vous naviguez sur le site, des données d’utilisation peuvent être recueillies passivement (c’est-à-dire sans que vous les fournissiez activement) à l’aide de diverses technologies d’analyse et de rapport, telles que les témoins (cookies) et les balises Web.</p>
+<h2>COMMENT ET QUAND NOUS RECUEILLONS LES RENSEIGNEMENTS</h2>
+<p><strong>Renseignements personnels.</strong> Nous les recueillons lorsque vous nous les fournissez, notamment au moyen de formulaires d’inscription, lors de l’ouverture d’un compte, de l’inscription à un produit ou à un service, ou de la participation à une promotion ou à un concours. Les renseignements demandés varient selon le formulaire.</p>
+<p><strong>Vos communications avec nous.</strong> Nous recueillons les renseignements que nous recevons lorsque vous communiquez avec nous, notamment par courriel ou au moyen de systèmes de réponse automatique.</p>
+<p><strong>Données d’utilisation.</strong> Nous pouvons surveiller votre utilisation du site. Des données peuvent être recueillies passivement au moyen de technologies d’analyse et de rapport telles que les témoins (cookies), les balises Web, les objets stockés localement, les identifiants d’appareils mobiles, les trousses de développement logiciel (SDK) et des technologies semblables. Voir la section sur les témoins et autres méthodes de collecte.</p>
 
-  <h2>COMMENT NOUS UTILISONS VOS RENSEIGNEMENTS</h2>
-  <p>Nous pouvons utiliser vos renseignements personnels pour fournir les services ou effectuer la transaction pour lesquels ils ont été communiqués, ainsi qu’en lien avec d’autres produits, services, promotions ou concours que nous pouvons offrir, nos rapports internes concernant le site et les évaluations de sécurité du site.</p>
-  <p>Nous nous réservons le droit d’utiliser pleinement les données d’utilisation. Par exemple, nous pouvons les utiliser pour mieux servir les visiteurs, personnaliser le site selon vos préférences, compiler et analyser les statistiques et tendances d’utilisation, et administrer et améliorer le site. Les utilisations particulières sont décrites ci-dessous.</p>
+<h2>COMMENT NOUS UTILISONS VOS RENSEIGNEMENTS</h2>
+<p>Nous pouvons utiliser vos renseignements personnels pour fournir les services ou effectuer la transaction pour lesquels ils ont été recueillis, ainsi qu’en lien avec d’autres produits, services, promotions, publicités ou concours que nous proposons, nos rapports internes et l’évaluation de la sécurité du site. Nous pouvons vous envoyer des messages concernant certaines fonctionnalités, votre activité ou des changements apportés au site ou à nos services; par défaut, ces messages sont envoyés par courriel.</p>
+<p>Nous pouvons utiliser les renseignements accessibles au public sur vos profils de médias sociaux, y compris les photos, pour nos activités de marketing, de publicité et de gestion des contacts, ainsi que celles de nos partenaires marketing.</p>
+<p>Nous pouvons utiliser les données d’utilisation à notre discrétion, notamment pour personnaliser les publicités, les offres et le contenu selon vos visites et votre utilisation du site, et pour analyser leur performance ainsi que vos interactions avec eux.</p>
+<p>Nous pouvons combiner les renseignements personnels et les données d’utilisation recueillis dans les services et produits proposés par nous et nos entités affiliées sur différents sites, afin de fournir, protéger et améliorer ces services et d’en concevoir de nouveaux. Ces renseignements combinés peuvent être utilisés pour vous proposer des publicités personnalisées.</p>
 
-  <h2>PARTAGE ET DIVULGATION DES RENSEIGNEMENTS</h2>
-  <p><strong>Politique générale de divulgation.</strong> Nous nous réservons le droit de divulguer vos renseignements personnels comme décrit ci-dessous. Nous nous réservons le droit de divulguer les données d’utilisation sans restriction.</p>
-  <p><strong>Entités affiliées.</strong> Nous nous réservons le droit de communiquer vos renseignements personnels et vos données d’utilisation à toute entité qui nous est affiliée, y compris nos filiales. Les entités affiliées sont celles que nous contrôlons légalement (par les droits de vote) ou qui nous contrôlent.</p>
-  <p><strong>Fournisseurs de services.</strong> Nous pouvons donner accès à vos renseignements personnels et à vos données d’utilisation à des fournisseurs de services de confiance qui nous aident à exploiter et à entretenir le site. Par exemple, nous pouvons faire appel à des tiers pour traiter les paiements, héberger nos serveurs, assurer la sécurité, ou fournir des services de production, d’exécution, d’optimisation, d’analyse et de rapport. Nos fournisseurs de services n’auront accès à vos renseignements que dans la mesure raisonnablement nécessaire à l’exécution des services qui leur sont confiés.</p>
-  <p><strong>Ayants droit et successeurs.</strong> Si nous vendons ou transférons autrement une partie ou la totalité de notre entreprise ou de nos actifs à une autre organisation, notamment dans le cadre d’une acquisition, d’une fusion, d’une faillite ou d’une liquidation, nous pouvons transférer vos renseignements personnels et vos données d’utilisation. Dans ce cas, nous exigerons de l’acheteur ou du cessionnaire qu’il accepte les engagements énoncés dans la présente Politique de confidentialité.</p>
-  <p><strong>Procédures judiciaires, application de la loi et sécurité.</strong> Nous nous réservons le droit de divulguer vos renseignements personnels et vos données d’utilisation si nous croyons de bonne foi que l’accès à ces renseignements, leur utilisation, leur conservation ou leur divulgation est raisonnablement nécessaire : (i) pour respecter une loi, un règlement, une procédure judiciaire ou une demande gouvernementale exécutoire applicable (par exemple, une assignation ou une ordonnance judiciaire); (ii) pour détecter, prévenir ou traiter une fraude ou toute autre activité illégale; ou (iii) pour enquêter sur des violations de nos droits ou de la sécurité du site, y répondre ou faire appliquer nos droits.</p>
-  <p><strong>Vos droits en matière de confidentialité en Californie.</strong> En vertu de la loi californienne SB 27, les résidents de la Californie ont le droit de recevoir, une fois par année, des renseignements sur les tiers avec lesquels nous avons partagé des renseignements les concernant, eux ou leur famille, à des fins de marketing au cours de l’année civile précédente, ainsi qu’une description des catégories de renseignements personnels partagés. Pour présenter une demande, envoyez un courriel à l’adresse indiquée dans nos coordonnées ci-dessous et inscrivez « California Privacy Request » dans l’objet, avec le nom de domaine du site visé, votre nom, votre adresse postale et votre adresse courriel. Nous répondrons dans les trente jours suivant la réception de la demande.</p>
+<h2>PARTAGE ET DIVULGATION DES RENSEIGNEMENTS</h2>
+<p><strong>Règle générale.</strong> Nous pouvons divulguer vos renseignements personnels dans les circonstances décrites ci-dessous. Les données d’utilisation peuvent être divulguées sans restriction selon la politique source.</p>
+<p><strong>Partenariats marketing.</strong> Nous pouvons collaborer avec une autre entreprise ou personne pour promouvoir conjointement nos produits, services, promotions ou concours, ou les leurs. Nous pouvons partager les renseignements nécessaires à la rémunération d’un partenaire, au traitement d’une transaction, à l’exécution d’une commande ou à la prestation de services de soutien.</p>
+<p><strong>Partenaires marketing et publicitaires.</strong> Nous pouvons partager des renseignements personnels et des données d’utilisation avec des fournisseurs de services tiers, annonceurs, réseaux et plateformes publicitaires, agences de publicité, courtiers et agrégateurs de données pour diffuser ou proposer des publicités personnalisées.</p>
+<p><strong>Entités affiliées.</strong> Nous pouvons communiquer vos renseignements à toute entité qui nous est affiliée, y compris nos filiales. Il s’agit des entités que nous contrôlons légalement ou qui nous contrôlent.</p>
+<p><strong>Fournisseurs de services.</strong> Nous pouvons donner accès à vos renseignements à des fournisseurs de confiance qui nous aident à exploiter et à entretenir le site, par exemple pour traiter des paiements, héberger nos serveurs, assurer la sécurité ou fournir des services de production, d’exécution, d’optimisation, d’analyse et de rapport. Ils n’auront accès aux renseignements que dans la mesure nécessaire à l’exécution des services confiés.</p>
+<p><strong>Vente ou transfert de l’entreprise.</strong> Si nous vendons ou transférons une partie ou la totalité de notre entreprise ou de nos actifs, notamment dans le cadre d’une acquisition, d’une fusion, d’une faillite ou d’une liquidation, nous pouvons transférer vos renseignements. Nous demanderons à l’acheteur ou au cessionnaire d’accepter les engagements de la présente politique.</p>
+<p><strong>Procédures judiciaires, application de la loi et sécurité.</strong> Nous pouvons divulguer vos renseignements si nous croyons de bonne foi que leur accès, leur utilisation, leur conservation ou leur divulgation est nécessaire pour respecter une loi, un règlement, une procédure judiciaire ou une demande gouvernementale exécutoire; détecter, prévenir ou traiter une fraude ou une activité illégale; ou enquêter sur une violation de nos droits ou de la sécurité du site, y répondre ou faire appliquer nos droits.</p>
+<p><strong>Demandes des résidents de la Californie.</strong> Le texte source fait référence à la loi californienne SB 27 et au droit des résidents de la Californie de demander une fois par année des renseignements sur les tiers auxquels des renseignements les concernant ou concernant leur famille ont été communiqués à des fins de marketing durant l’année civile précédente, ainsi qu’une description des catégories partagées. Pour présenter une demande, écrivez à l’adresse indiquée dans « Nous joindre », avec « California Privacy Request » dans l’objet, le domaine du site, votre nom, votre adresse postale et votre adresse courriel. Le texte source indique qu’une réponse sera envoyée dans les trente jours.</p>
 
-  <h2>RENSEIGNEMENTS PARTICULIERS SUR LES TÉMOINS ET LES BALISES WEB</h2>
-  <p>Afin d’améliorer le service offert sur notre site, nous pouvons utiliser des témoins (cookies) et des balises Web pour recueillir des données d’utilisation, mémoriser vos préférences et conserver des renseignements sur les pages consultées et vos activités antérieures sur le site. Nous pouvons également utiliser des balises Web de tiers pour compiler des statistiques globales sur l’efficacité de nos campagnes promotionnelles ou d’autres activités du site.</p>
-  <p>Les « témoins » sont de petits éléments d’information enregistrés par votre navigateur sur le disque dur de votre ordinateur. Ils servent également à personnaliser le contenu selon votre navigateur. La plupart des navigateurs acceptent les témoins par défaut. Si vous souhaitez les désactiver, la plupart des navigateurs proposent une procédure simple. Veuillez toutefois noter que les témoins peuvent être nécessaires pour utiliser certaines fonctionnalités du site.</p>
-  <p>Des témoins Flash — des témoins tiers qui utilisent un objet partagé local (LSO) d’Adobe Flash Media Player — peuvent être utilisés avec d’autres témoins tiers afin d’attribuer à l’un de nos partenaires de marketing en coentreprise les achats que vous effectuez sur ce site lorsqu’il vous a recommandé. Ces témoins servent à attribuer les ventes au partenaire de marketing qui a dirigé le visiteur vers le site. Les témoins Flash sont différents des témoins de navigateur. Adobe Flash Media Player est un logiciel qui permet de consulter du contenu sur un ordinateur. Les témoins Flash sont également accompagnés d’un témoin de navigateur. Si vous supprimez le témoin de navigateur, le témoin Flash peut automatiquement créer ou recréer un témoin de remplacement.</p>
-  <p>Les balises Web — parfois appelées GIF à pixel unique ou GIF invisibles — servent à faciliter la transmission des témoins et à compter les utilisateurs qui visitent les pages du site. Nous pouvons intégrer des balises Web dans des courriels promotionnels ou d’autres communications afin de déterminer si les messages ont été ouverts et si les destinataires ont donné suite à leur contenu.</p>
+<h2>TÉMOINS, BALISES WEB ET AUTRES MÉTHODES DE COLLECTE</h2>
+<p>Pour améliorer le service, nous et nos partenaires marketing pouvons utiliser des témoins et d’autres méthodes de collecte pour recueillir des données d’utilisation, mémoriser vos préférences et conserver des renseignements sur les pages consultées et vos activités sur ce site ou d’autres sites. Ces technologies peuvent aussi aider à mesurer l’efficacité des campagnes promotionnelles et à afficher des publicités personnalisées. Consultez <a href="https://www.consumer.ftc.gov/articles/0042-cookies-leaving-trail-web">la ressource de la FTC sur les témoins</a>.</p>
+<p><strong>Témoins (cookies).</strong> Les témoins sont de petits fichiers enregistrés par votre navigateur sur votre appareil. Ils peuvent mémoriser des préférences et personnaliser le contenu. Vous pouvez généralement modifier les paramètres de votre navigateur pour refuser les témoins ou être averti lorsqu’un témoin est envoyé. Leur désactivation peut empêcher certaines fonctions du site de fonctionner. Pour en savoir plus, consultez <a href="https://www.allaboutcookies.org/manage-cookies/">All About Cookies — gestion des témoins</a>.</p>
+<p><strong>Témoins Flash et objets stockés localement.</strong> Les témoins Flash, aussi appelés objets partagés locaux (LSO), fonctionnaient avec Adobe Flash Player et pouvaient servir, avec des témoins de navigateur, à attribuer un achat à un partenaire marketing. Ils pouvaient être gérés séparément et, dans certains cas, recréer un témoin supprimé. Adobe Flash Player est une technologie abandonnée; cette description est conservée parce qu’elle figure dans le texte source fourni.</p>
+<p><strong>Balises Web.</strong> Les balises Web, parfois appelées GIF à pixel unique ou GIF invisibles, peuvent faciliter l’envoi de témoins et compter les utilisateurs qui visitent certaines pages. Nous pouvons en intégrer dans des courriels promotionnels pour déterminer si les messages ont été ouverts et si les destinataires ont interagi avec leur contenu.</p>
+<p><strong>Objets stockés localement.</strong> Nous pouvons utiliser des objets stockés localement et d’autres technologies côté client pour mémoriser les paramètres, préférences et données d’utilisation, ou aider nos partenaires à cibler des publicités et à analyser leur performance. Certains navigateurs permettent de supprimer ces objets dans les paramètres de confidentialité.</p>
 
-  <h2>ANALYSE</h2>
-  <p>Nous nous réservons le droit de faire appel à des partenaires d’analyse tiers pour surveiller et analyser le trafic Web et suivre le comportement des utilisateurs sur ce site.</p>
-  <p><strong>Google Analytics (Google).</strong> Google Analytics est un service d’analyse Web fourni par Google Inc. (« Google »). Google utilise les données recueillies pour suivre et examiner l’utilisation du site, préparer des rapports sur ses activités et partager ces données avec d’autres services Google. Renseignements recueillis : témoins et données d’utilisation. Consultez la politique de confidentialité de Google à l’adresse <a href="https://www.google.com/intl/en/policies/?fg=1">https://www.google.com/intl/en/policies/?fg=1</a>. Vous pouvez vous opposer à Google Analytics au moyen du module complémentaire de navigateur de Google disponible à l’adresse <a href="https://tools.google.com/dlpage/gaoptout/">https://tools.google.com/dlpage/gaoptout/</a>.</p>
+<h2>PUBLICITÉS PERSONNALISÉES ET CHOIX PUBLICITAIRES</h2>
+<p>Nous pouvons collaborer avec nos partenaires marketing pour diffuser des publicités personnalisées selon vos centres d’intérêt. Cette activité peut s’appuyer sur des données d’utilisation, des témoins et d’autres méthodes de suivi afin de transmettre des renseignements aux partenaires responsables des activités publicitaires. Ces partenaires peuvent aussi utiliser leurs propres témoins et technologies pour mesurer l’efficacité des publicités et à d’autres fins décrites dans leurs politiques de confidentialité. Nous ne contrôlons pas ces technologies et ne sommes pas responsables des politiques ou pratiques de ces partenaires.</p>
+<p><strong>AdWords et services publicitaires Google.</strong> Nous pouvons participer à des services de publicité personnalisée de Google qui relient l’activité du site au réseau publicitaire Google et à des témoins comme DoubleClick. Les renseignements recueillis peuvent comprendre des témoins et des données d’utilisation. Pour gérer la personnalisation des annonces, consultez <a href="https://support.google.com/ads/answer/2662922?hl=fr">les paramètres des annonces Google</a>.</p>
+<p><strong>Google Analytics pour la publicité display.</strong> Nous pouvons utiliser des fonctionnalités publicitaires de Google Analytics, notamment les rapports sur les impressions du Réseau Display, l’intégration de Campaign Manager et les rapports démographiques et sur les centres d’intérêt. Ces fonctionnalités peuvent associer l’activité mesurée par Analytics aux services publicitaires Google. Pour gérer les annonces, consultez <a href="https://adssettings.google.com/">Paramètres des annonces Google</a>. Vous pouvez désactiver Analytics au moyen du <a href="https://tools.google.com/dlpage/gaoptout">module complémentaire de navigateur de désactivation de Google Analytics</a>. Pour en savoir plus, consultez <a href="https://policies.google.com/technologies/ads?hl=fr">les technologies publicitaires de Google</a> et <a href="https://policies.google.com/technologies/partner-sites?hl=fr">la façon dont Google utilise les données des sites ou applications partenaires</a>.</p>
+<p><strong>Audiences personnalisées Facebook/Meta.</strong> Nous pouvons participer à un programme d’audiences personnalisées qui permet d’afficher des publicités aux personnes figurant sur nos listes de courriels lorsqu’elles utilisent Facebook. Des renseignements tels que l’adresse courriel ou le numéro de téléphone peuvent être transmis à Facebook pour vérifier si un compte correspond. Pour demander le retrait du programme décrit dans le texte source, écrivez à l’adresse indiquée dans « Nous joindre », à partir de l’adresse courriel concernée, avec l’objet « Opting Out of Facebook.com Website Custom Audience Ads », et indiquez votre nom et votre adresse courriel. Le texte source indique que ces renseignements seront transmis à Facebook avec une demande de retrait des audiences personnalisées.</p>
+<p><strong>Audiences ciblées et conversions Twitter/X.</strong> Nous pouvons participer à des programmes de publicité ciblée ou de suivi des conversions. Pour en savoir plus sur les choix de confidentialité, consultez <a href="https://help.x.com/en/safety-and-security/privacy-controls-for-tailored-ads">les contrôles publicitaires personnalisés de X</a>.</p>
+<p><strong>Autres services de publicité comportementale.</strong> Nous pouvons participer à d’autres services de reciblage ou de publicité comportementale semblables à ceux décrits ci-dessus.</p>
+<p><strong>Network Advertising Initiative (NAI).</strong> Certaines entreprises qui utilisent des témoins pour recueillir des renseignements sur vos activités en ligne sont membres de la NAI, qui propose des choix de désactivation pour certaines publicités personnalisées diffusées par ses membres. Consultez <a href="https://thenai.org/how-to-opt-out/">la page de désinscription de la NAI</a>.</p>
+<p><strong>Digital Advertising Alliance (DAA).</strong> La DAA propose un programme d’autoréglementation pour aider les consommateurs à comprendre et à contrôler les publicités fondées sur leurs activités en ligne. Pour consulter les choix offerts par les entreprises participantes, visitez <a href="https://www.aboutads.info/consumers">la page de la DAA destinée aux consommateurs</a>.</p>
+<p><strong>Choix publicitaires sur les appareils mobiles.</strong> Selon votre appareil, vous pouvez réinitialiser l’identifiant publicitaire ou limiter la personnalisation des annonces dans les paramètres de confidentialité. iOS, Android et Windows proposent leurs propres instructions. Consultez les paramètres de votre système d’exploitation ou les documents d’assistance du fabricant.</p>
 
-  <h2>INTERACTIONS AVEC LES MÉDIAS SOCIAUX</h2>
-  <p>Nous vous invitons à échanger sur les médias sociaux et à partager votre participation à ce site ainsi que vos achats. Si vous choisissez d’utiliser des plateformes comme Facebook, Twitter, Pinterest ou Instagram, vous autorisez une interaction directe avec ces plateformes ou d’autres plateformes externes à partir de ce site. Dans ce processus, certains éléments de votre profil, y compris vos commentaires, peuvent être partagés. Ce partage est régi par les politiques de confidentialité de chaque plateforme.</p>
+<h2>ANALYSE DU SITE</h2>
+<p>Nous pouvons faire appel à des partenaires d’analyse tiers pour surveiller le trafic Web et analyser le comportement des utilisateurs sur ce site.</p>
+<p><strong>Google Analytics.</strong> Google Analytics est un service d’analyse Web fourni par Google LLC (« Google »). Google utilise les données recueillies pour examiner l’utilisation du site, préparer des rapports et partager ces données avec d’autres services Google. Les renseignements recueillis peuvent comprendre des témoins et des données d’utilisation. Consultez la <a href="https://policies.google.com/privacy?hl=fr">politique de confidentialité de Google</a> ou utilisez le <a href="https://tools.google.com/dlpage/gaoptout">module complémentaire de désactivation de Google Analytics</a>.</p>
 
-  <h2>DEMANDES « DO NOT TRACK »</h2>
-  <p>Certains navigateurs Web comportent une fonction « Do Not Track » (« ne pas suivre ») qui signale aux sites visités que vous ne souhaitez pas que votre activité en ligne soit suivie. Chaque navigateur transmet ces signaux différemment, ce qui rend difficile le traitement uniforme de toutes les demandes. Afin d’éviter les erreurs de communication entre les navigateurs et les sites Web, nous ne répondons pas actuellement aux signaux « Do Not Track ». À mesure que la technologie et les communications entre navigateurs et sites Web s’amélioreront, nous réévaluerons notre capacité à respecter ces signaux et pourrons modifier la présente politique.</p>
+<h2>INTERACTIONS AVEC LES MÉDIAS SOCIAUX</h2>
+<p>Nous vous invitons à échanger sur les médias sociaux et à partager votre participation à ce site. Si vous utilisez des plateformes comme Facebook, X/Twitter, Pinterest ou Instagram, vous pouvez interagir directement avec elles à partir du site. Certains éléments de votre profil ou vos commentaires peuvent alors être partagés. Ces échanges sont régis par les politiques de confidentialité et conditions d’utilisation de chaque plateforme.</p>
 
-  <h2>SÉCURITÉ DES DONNÉES</h2>
-  <p>Nous mettrons en œuvre des procédures de sécurité raisonnables et appropriées, conformes aux normes généralement reconnues dans le secteur, afin de protéger les données contre tout accès non autorisé, qu’il soit physique ou électronique. Malheureusement, aucune transmission de données sur Internet ni aucune méthode de stockage ne peut être garantie sécuritaire à 100 %. Ainsi, même si nous nous efforçons de protéger vos renseignements personnels en respectant les normes généralement acceptées, nous ne pouvons garantir la sécurité absolue des renseignements que vous nous transmettez ou que vous archivez sur ce site.</p>
-  <p>Lorsque vous transmettez des renseignements personnels dans le cadre du processus d’inscription ou lorsque vous achetez des produits ou services, nous chiffrons ces renseignements pendant leur transmission au moyen de la technologie SSL (Secure Sockets Layer).</p>
+<h2>DEMANDES « DO NOT TRACK » (« NE PAS SUIVRE »)</h2>
+<p>Certains navigateurs comportent une fonction « Do Not Track » qui signale aux sites visités que vous ne souhaitez pas que votre activité en ligne soit suivie. Les navigateurs transmettent ces signaux de différentes façons. Le texte source indique que le site ne répond pas actuellement aux signaux « Do Not Track »; cette position pourrait être réévaluée à mesure que les technologies évolueront.</p>
 
-  <h2>TRANSFERT À L’ÉTRANGER, HORS DE VOTRE PAYS DE RÉSIDENCE</h2>
-  <p>Les renseignements personnels que nous recueillons sur ce site peuvent être stockés et traités sur nos serveurs situés aux États-Unis ou dans tout autre pays où nous, nos sociétés affiliées, nos filiales ou nos mandataires disposons d’installations. En utilisant ce site, vous consentez à tout transfert de vos renseignements personnels hors de votre pays de résidence vers l’un de ces lieux.</p>
+<h2>SÉCURITÉ DES DONNÉES</h2>
+<p>Nous mettrons en œuvre des procédures de sécurité raisonnables et appropriées, conformes aux normes généralement reconnues dans le secteur, afin de protéger les données contre les accès non autorisés, physiques ou électroniques. Toutefois, aucune transmission sur Internet ni aucune méthode de stockage ne peut être garantie sécuritaire à 100 %. Nous ne pouvons donc garantir la sécurité absolue des renseignements que vous nous transmettez ou que vous stockez sur ce site.</p>
+<p>Le texte source indique que les renseignements personnels transmis lors d’une inscription ou d’un achat sont chiffrés pendant leur transmission au moyen de la technologie SSL (Secure Sockets Layer).</p>
 
-  <h2>MISE À JOUR DES RENSEIGNEMENTS PERSONNELS</h2>
-  <p>Sur demande, nous vous permettrons de demander ou d’effectuer des modifications ou des mises à jour de vos renseignements personnels à des fins légitimes. Nous demandons une preuve d’identité avant d’approuver ces demandes. Nous nous réservons le droit de refuser les demandes excessivement répétitives ou systématiques, qui exigent un temps ou des efforts déraisonnables de la part de notre personnel technique ou administratif, ou qui portent atteinte aux droits à la vie privée d’autrui. Nous pouvons vous permettre d’accéder aux renseignements personnels de tout compte que vous avez créé sur ce site afin d’y apporter vous-même des modifications ou des mises à jour; le cas échéant, les instructions nécessaires seront fournies.</p>
+<h2>TRANSFERT À L’ÉTRANGER</h2>
+<p>Les renseignements personnels recueillis sur ce site peuvent être stockés et traités sur des serveurs situés aux États-Unis ou dans tout autre pays où nous, nos sociétés affiliées, nos filiales ou nos mandataires disposons d’installations. En utilisant ce site, vous consentez au transfert de vos renseignements hors de votre pays de résidence, sous réserve des lois applicables.</p>
 
-  <h2>LIENS VERS LES SITES DE PARTENAIRES DE MARKETING</h2>
-  <p>Ce site peut contenir des liens vers d’autres sites exploités par nos partenaires de marketing en coentreprise. Si vous cliquez sur ces liens ou acceptez leurs offres promotionnelles, les renseignements relatifs à votre clic ainsi que les renseignements fournis lors de l’inscription ou de l’achat seront transférés à ces sites. Nous ne sommes pas responsables des politiques ni des pratiques de ces sites. Nous vous recommandons de lire attentivement leur politique de confidentialité avant de leur fournir des renseignements.</p>
+<h2>MISE À JOUR DES RENSEIGNEMENTS PERSONNELS</h2>
+<p>Vous pouvez demander des modifications ou des mises à jour de vos renseignements personnels à des fins légitimes. Nous pouvons demander une preuve d’identité avant d’approuver une demande. Nous pouvons refuser les demandes excessivement répétitives ou systématiques, qui exigent un temps ou des efforts déraisonnables, ou qui portent atteinte aux droits à la vie privée d’autrui. Si votre compte permet de consulter et de modifier vous-même vos renseignements, les instructions nécessaires seront fournies.</p>
 
-  <h2>POLITIQUE EN LIGNE CONCERNANT LES ENFANTS</h2>
-  <p>Nous nous engageons à préserver la confidentialité en ligne de tous les visiteurs du site, y compris les enfants. Ce site s’adresse au grand public. Conformément à la loi américaine COPPA (Children’s Online Privacy Protection Act), nous ne recueillerons ni ne vendrons sciemment de renseignements concernant des enfants de moins de 13 ans. Si un parent ou tuteur constate que son enfant de moins de 13 ans a transmis des renseignements permettant de l’identifier sans sa permission ou son consentement, nous retirerons ces renseignements de notre liste active à sa demande. Pour demander leur retrait, veuillez nous contacter comme indiqué dans la section « Nous joindre » ci-dessous et inclure dans votre message les mêmes renseignements de connexion que ceux soumis par l’enfant.</p>
+<h2>LIENS VERS LES SITES DE PARTENAIRES MARKETING</h2>
+<p>Ce site peut contenir des liens vers d’autres sites exploités par nos partenaires marketing. Si vous cliquez sur ces liens ou acceptez leurs offres promotionnelles, les renseignements relatifs à votre clic et ceux fournis lors de l’inscription ou de l’achat peuvent être transférés à ces sites. Nous ne sommes pas responsables de leurs politiques ou pratiques. Lisez leur politique de confidentialité avant de leur fournir des renseignements.</p>
 
-  <h2>NOUS JOINDRE</h2>
-  <p>Si vous avez des questions concernant la présente Politique de confidentialité, veuillez communiquer avec le propriétaire et exploitant de ce site :</p>
-  <p><strong>Retro Neon Lounge</strong><br>
-  À l’attention du responsable de la politique de confidentialité<br>
-  2710 de la Renaissance,<br>
-  Laval, hors États-Unis, H7L 3W8<br>
-  Courriel : <a href="mailto:vispoleone@yahoo.ca">vispoleone@yahoo.ca</a><br>
-  Téléphone : 514-446-3411</p>
+<h2>POLITIQUE EN LIGNE CONCERNANT LES ENFANTS</h2>
+<p>Nous nous engageons à préserver la confidentialité en ligne de tous les visiteurs, y compris les enfants. Ce site s’adresse au grand public. Le texte source indique qu’en vertu de la loi américaine COPPA (Children’s Online Privacy Protection Act), nous ne recueillerons ni ne vendrons sciemment de renseignements concernant des enfants de moins de 13 ans. Si un parent ou tuteur apprend qu’un enfant de moins de 13 ans a transmis des renseignements permettant de l’identifier sans sa permission ou son consentement, il peut demander leur retrait de notre liste active. Pour présenter une demande, veuillez nous contacter ci-dessous et inclure les mêmes renseignements de connexion que ceux soumis par l’enfant.</p>
 
-  <hr>
-  <p><strong>Modifications importantes depuis le 1er juin 2026 :</strong> aucune.</p>
-  <p><small>Avis : ce document est protégé par le droit d’auteur © Chip Cooper, du cabinet d’avocats Jones &amp; Haley, P.C., et est concédé sous licence au propriétaire de ce site dans le cadre des droits de distribution accordés à FTCGuardian.com. Tous droits réservés dans le monde entier. Aucune partie de ce document ne peut être copiée, réimprimée, reproduite ou transmise, sous quelque forme ou par quelque moyen que ce soit, sans l’autorisation écrite préalable du titulaire du droit d’auteur.</small></p>
+<h2>NOUS JOINDRE</h2>
+<p>Pour toute question concernant la présente Politique de confidentialité, veuillez communiquer avec le propriétaire et exploitant du site :</p>
+<p><strong>Retro Neon Lounge</strong><br>À l’attention du responsable de la Politique de confidentialité<br>2185, avenue de Melrose<br>Montréal (Québec) H4A 2R7<br>Courriel : <a href="mailto:info@retroneonlounge.com">info@retroneonlounge.com</a><br>Téléphone : 514-446-3411</p>
+<hr>
+<p><strong>Modifications importantes depuis le 1er octobre 2026 :</strong> aucune autre modification importante n’est indiquée dans le texte fourni.</p>
+<p><small>Avis de droit d’auteur : ce document est protégé par le droit d’auteur de Chip Cooper, du cabinet Jones &amp; Haley, P.C., et est concédé sous licence au propriétaire de ce site dans le cadre des droits de distribution accordés à FTCGuardian.com. Tous droits réservés dans le monde entier. Aucune partie de ce document ne peut être copiée, réimprimée, reproduite ou transmise, sous quelque forme ou par quelque moyen que ce soit, sans l’autorisation écrite préalable du titulaire du droit d’auteur.</small></p>
+<p><small>Remarque : cette traduction conserve les éléments de politique fournis, y compris certaines références juridiques et technologiques qui peuvent être anciennes. Elle ne constitue pas un avis juridique. Avant publication, vérifiez qu’elle correspond aux pratiques réelles de RNL et aux lois applicables, notamment au Québec.</small></p>
 </main>
-
 <footer>
-  <p>© RETRO NEON LOUNGE &nbsp;·&nbsp; QUEBEC, CANADA &nbsp;·&nbsp; <a href="mailto:hello@retroneonlounge.com">hello@retroneonlounge.com</a></p>
-  <p style="margin-top:0.5rem;"><a href="index-fr.html">ACCUEIL</a> &nbsp;·&nbsp; <a href="terms-of-use-fr.html">CONDITIONS</a></p>
+<p>© RETRO NEON LOUNGE &nbsp;·&nbsp; QUÉBEC, CANADA &nbsp;·&nbsp; <a href="mailto:hello@retroneonlounge.com">hello@retroneonlounge.com</a></p>
+<p style="margin-top:.5rem;"><a href="index-fr.html">ACCUEIL</a> &nbsp;·&nbsp; <a href="terms-of-use-fr.html">CONDITIONS</a></p>
 </footer>
-
 </body>
 </html>
